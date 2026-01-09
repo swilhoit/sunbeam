@@ -212,7 +212,7 @@ export function Header() {
                   <Link
                     href="/"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-xl font-heading"
+                    className="text-xl font-heading tracking-tight"
                   >
                     Sunbeam Vintage
                   </Link>
