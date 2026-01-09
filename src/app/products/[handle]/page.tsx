@@ -74,13 +74,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </p>
 
               {/* Title */}
-              <h1 className="text-3xl md:text-4xl font-heading mb-4">
+              <h1 className="text-xl md:text-2xl font-heading mb-4">
                 {product.title}
               </h1>
 
               {/* Price */}
               <div className="flex items-center gap-3 mb-6">
-                <span className="text-2xl font-sans">
+                <span className="text-lg font-sans">
                   {formatPrice(product.price)}
                 </span>
                 {product.compareAtPrice && product.compareAtPrice > product.price && (
@@ -167,7 +167,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   <p className="text-[11px] font-sans uppercase tracking-[0.3em] text-muted-foreground mb-2">
                     You May Also Like
                   </p>
-                  <h2 className="text-3xl md:text-4xl font-heading">
+                  <h2 className="text-xl md:text-2xl font-heading">
                     Related Pieces
                   </h2>
                 </div>

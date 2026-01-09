@@ -29,7 +29,7 @@ export default function HomePage() {
                 <p className="text-[11px] font-sans uppercase tracking-[0.3em] text-muted-foreground mb-3">
                   The Collection
                 </p>
-                <h2 className="text-4xl md:text-5xl font-heading">
+                <h2 className="text-2xl md:text-3xl font-heading">
                   Recent Arrivals
                 </h2>
               </div>
@@ -73,7 +73,7 @@ export default function HomePage() {
                 <p className="text-[11px] font-sans uppercase tracking-[0.3em] text-muted-foreground mb-4">
                   Our Philosophy
                 </p>
-                <h2 className="text-4xl md:text-5xl font-heading mb-8 leading-tight">
+                <h2 className="text-2xl md:text-3xl font-heading mb-8 leading-tight">
                   Where Every Piece<br />
                   Has a Past
                 </h2>
@@ -92,16 +92,16 @@ export default function HomePage() {
                 <div className="mt-10 pt-10 border-t border-border">
                   <div className="grid grid-cols-3 gap-8">
                     <div>
-                      <p className="text-3xl font-heading">500+</p>
-                      <p className="text-sm text-muted-foreground mt-1">Curated Pieces</p>
+                      <p className="text-xl font-heading">500+</p>
+                      <p className="text-xs text-muted-foreground mt-1">Curated Pieces</p>
                     </div>
                     <div>
-                      <p className="text-3xl font-heading">10+</p>
-                      <p className="text-sm text-muted-foreground mt-1">Years Experience</p>
+                      <p className="text-xl font-heading">10+</p>
+                      <p className="text-xs text-muted-foreground mt-1">Years Experience</p>
                     </div>
                     <div>
-                      <p className="text-3xl font-heading">LA</p>
-                      <p className="text-sm text-muted-foreground mt-1">Based Studio</p>
+                      <p className="text-xl font-heading">LA</p>
+                      <p className="text-xs text-muted-foreground mt-1">Based Studio</p>
                     </div>
                   </div>
                 </div>
@@ -117,7 +117,7 @@ export default function HomePage() {
               <p className="text-[11px] font-sans uppercase tracking-[0.3em] text-muted-foreground mb-3">
                 Browse By
               </p>
-              <h2 className="text-4xl md:text-5xl font-heading">
+              <h2 className="text-2xl md:text-3xl font-heading">
                 Categories
               </h2>
             </div>
@@ -144,8 +144,8 @@ export default function HomePage() {
                     />
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-8">
-                    <h3 className="text-2xl font-heading text-background">
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-lg font-heading text-background">
                       {category.name}
                     </h3>
                   </div>
@@ -158,7 +158,7 @@ export default function HomePage() {
         {/* Quote Section */}
         <section className="py-24 md:py-32 bg-foreground text-background">
           <div className="mx-auto max-w-4xl px-6 md:px-12 lg:px-20 text-center">
-            <blockquote className="text-3xl md:text-4xl lg:text-5xl font-heading leading-snug italic">
+            <blockquote className="text-xl md:text-2xl lg:text-3xl font-heading leading-relaxed italic">
               "Good design is like a good recipe—it should be timeless,
               honest, and bring people together."
             </blockquote>

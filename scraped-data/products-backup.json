@@ -127,22 +127,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Nightstands",
-    "rooms": [
-      "Bedroom"
-    ],
-    "style": "Modern",
-    "condition": "Good",
-    "era": "Contemporary",
-    "materials": [],
-    "dimensions": {
-      "width": 21.75,
-      "depth": 15.75,
-      "height": 21.5
-    },
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 8836345004280,
@@ -242,26 +227,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Sectionals & Modular",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Contemporary",
-    "condition": null,
-    "era": "1970s",
-    "materials": [
-      "Gold",
-      "Velvet"
-    ],
-    "dimensions": {
-      "width": 35,
-      "depth": 45,
-      "height": 30,
-      "seatHeight": 13
-    },
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9021235429624,
@@ -368,26 +334,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Sectionals & Modular",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Modern",
-    "condition": null,
-    "era": null,
-    "materials": [
-      "Gold",
-      "Velvet"
-    ],
-    "dimensions": {
-      "width": 36,
-      "depth": 46,
-      "height": 26,
-      "seatHeight": 12
-    },
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9367374725368,
@@ -691,20 +638,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Tables",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": "Good",
-    "era": null,
-    "materials": [],
-    "dimensions": {
-      "width": 25,
-      "depth": 22,
-      "height": 35
-    },
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 4529665998917,
@@ -754,22 +688,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Coffee Tables",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [
-      "Walnut",
-      "Lacquer",
-      "Wood"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9367351918840,
@@ -809,16 +728,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "",
-    "rooms": [],
-    "style": null,
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 8918113747192,
@@ -862,16 +772,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Decorative Objects",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": "Good",
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9153402110200,
@@ -997,25 +898,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Bookcases",
-    "rooms": [
-      "Living Room",
-      "Office"
-    ],
-    "style": "Contemporary",
-    "condition": null,
-    "era": "Contemporary",
-    "materials": [
-      "Wood"
-    ],
-    "dimensions": {
-      "width": 31,
-      "depth": 13,
-      "height": 71
-    },
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 4529667604549,
@@ -1089,24 +972,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Coffee Tables",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [
-      "Walnut",
-      "Brass",
-      "Glass",
-      "Lacquer",
-      "Wood"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 8322741928184,
@@ -1225,21 +1091,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Coffee Tables",
-    "rooms": [
-      "Bedroom",
-      "Living Room"
-    ],
-    "style": "Modern",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": {
-      "diameter": 29
-    },
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 6663164428484,
@@ -1360,21 +1212,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Coffee Tables",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Modern",
-    "condition": null,
-    "era": null,
-    "materials": [
-      "Walnut",
-      "Wood"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9367173824760,
@@ -1477,18 +1315,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Serveware",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [
-      "Iron"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9366925934840,
@@ -1629,22 +1456,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Sofas",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Vintage",
-    "condition": "Good",
-    "era": null,
-    "materials": [
-      "Rosewood",
-      "Upholstered",
-      "Wood"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9366960832760,
@@ -1746,18 +1558,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Decorative Objects",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": "1970s",
-    "materials": [
-      "Brass"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9366952411384,
@@ -1924,23 +1725,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Accent Chairs",
-    "rooms": [
-      "Bedroom",
-      "Living Room"
-    ],
-    "style": "Contemporary",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": {
-      "width": 39,
-      "depth": 40,
-      "height": 34
-    },
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9366943269112,
@@ -2082,22 +1867,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Loveseats",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Vintage",
-    "condition": "As-Found",
-    "era": null,
-    "materials": [],
-    "dimensions": {
-      "width": 41,
-      "depth": 26,
-      "height": 38
-    },
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9366939566328,
@@ -2239,24 +2009,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Nightstands",
-    "rooms": [
-      "Bedroom"
-    ],
-    "style": "Vintage",
-    "condition": "Good",
-    "era": null,
-    "materials": [
-      "Walnut"
-    ],
-    "dimensions": {
-      "width": 17,
-      "depth": 12,
-      "height": 25.5
-    },
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9366934814968,
@@ -2373,20 +2126,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Floor Lamps",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": "Good",
-    "era": null,
-    "materials": [
-      "Steel"
-    ],
-    "dimensions": {
-      "diameter": 23
-    },
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9366931538168,
@@ -2549,22 +2289,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Accent Chairs",
-    "rooms": [
-      "Bedroom"
-    ],
-    "style": "Vintage",
-    "condition": "Good",
-    "era": null,
-    "materials": [],
-    "dimensions": {
-      "width": 23,
-      "depth": 29,
-      "height": 31
-    },
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9366917808376,
@@ -2811,23 +2536,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Media Consoles",
-    "rooms": [
-      "Living Room",
-      "Office"
-    ],
-    "style": "Vintage",
-    "condition": "Good",
-    "era": null,
-    "materials": [],
-    "dimensions": {
-      "width": 72,
-      "depth": 20,
-      "height": 33
-    },
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000001,
@@ -2872,18 +2581,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Accent Chairs",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Contemporary",
-    "condition": null,
-    "era": "Contemporary",
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000002,
@@ -2928,18 +2626,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Sofas",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000003,
@@ -2984,21 +2671,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Sectionals & Modular",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [
-      "Rosewood",
-      "Wood"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000004,
@@ -3044,19 +2717,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Bookcases",
-    "rooms": [
-      "Living Room",
-      "Office"
-    ],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000005,
@@ -3101,18 +2762,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Side Tables",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Modern",
-    "condition": null,
-    "era": "Contemporary",
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000006,
@@ -3158,16 +2808,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Dining Sets",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": "1970s",
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000007,
@@ -3212,16 +2853,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Dining Chairs",
-    "rooms": [],
-    "style": "Contemporary",
-    "condition": null,
-    "era": "Contemporary",
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000008,
@@ -3267,16 +2899,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Dining Tables",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000009,
@@ -3322,16 +2945,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Dining Chairs",
-    "rooms": [],
-    "style": "Contemporary",
-    "condition": null,
-    "era": "Contemporary",
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000010,
@@ -3377,16 +2991,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Bar Stools",
-    "rooms": [],
-    "style": "Modern",
-    "condition": null,
-    "era": "Contemporary",
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000011,
@@ -3431,20 +3036,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Nightstands",
-    "rooms": [
-      "Bedroom"
-    ],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [
-      "Walnut"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000012,
@@ -3490,18 +3082,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Dressers",
-    "rooms": [
-      "Bedroom"
-    ],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000013,
@@ -3547,18 +3128,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Dressers",
-    "rooms": [
-      "Bedroom"
-    ],
-    "style": "Vintage",
-    "condition": null,
-    "era": "1980s",
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000014,
@@ -3605,18 +3175,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Nightstands",
-    "rooms": [
-      "Bedroom"
-    ],
-    "style": "Vintage",
-    "condition": null,
-    "era": "1980s",
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000015,
@@ -3662,18 +3221,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Dressers",
-    "rooms": [
-      "Bedroom"
-    ],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000016,
@@ -3718,16 +3266,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Wall Art",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000017,
@@ -3773,16 +3312,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Wall Art",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000018,
@@ -3828,16 +3358,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Wall Art",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000019,
@@ -3883,16 +3404,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Wall Art",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000020,
@@ -3937,18 +3449,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Floor Lamps",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [
-      "Steel"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000021,
@@ -3994,20 +3495,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Table Lamps",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [
-      "Linen",
-      "Ceramic",
-      "Marble"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000022,
@@ -4054,16 +3542,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Pendants & Chandeliers",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000023,
@@ -4109,19 +3588,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Floor Lamps",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [
-      "Brass",
-      "Tile"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000024,
@@ -4166,16 +3633,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Rugs",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000025,
@@ -4222,19 +3680,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Rugs",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [
-      "Wool",
-      "Silk"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000026,
@@ -4279,16 +3725,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Rugs",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000027,
@@ -4334,16 +3771,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Rugs",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000028,
@@ -4389,20 +3817,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Accent Chairs",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Contemporary",
-    "condition": null,
-    "era": "Contemporary",
-    "materials": [
-      "Leather"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000029,
@@ -4448,20 +3863,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Accent Chairs",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Contemporary",
-    "condition": null,
-    "era": "Contemporary",
-    "materials": [
-      "Leather"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000030,
@@ -4507,20 +3909,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Media Consoles",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [
-      "Walnut"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000031,
@@ -4566,20 +3955,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Bookcases",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Modern",
-    "condition": null,
-    "era": null,
-    "materials": [
-      "Rattan"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000032,
@@ -4625,18 +4001,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Media Consoles",
-    "rooms": [
-      "Living Room"
-    ],
-    "style": "Vintage",
-    "condition": null,
-    "era": "Contemporary",
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000033,
@@ -4682,16 +4047,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Wall Art",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000034,
@@ -4737,16 +4093,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Wall Art",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000035,
@@ -4792,16 +4139,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Floor Lamps",
-    "rooms": [],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000036,
@@ -4847,16 +4185,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Floor Lamps",
-    "rooms": [],
-    "style": "Contemporary",
-    "condition": null,
-    "era": "Contemporary",
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000037,
@@ -4902,20 +4231,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Desks",
-    "rooms": [
-      "Office"
-    ],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [
-      "Maple"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000038,
@@ -4961,20 +4277,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Office Chairs",
-    "rooms": [
-      "Office"
-    ],
-    "style": "Contemporary",
-    "condition": null,
-    "era": "Contemporary",
-    "materials": [
-      "Leather"
-    ],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000039,
@@ -5021,19 +4324,7 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Media Consoles",
-    "rooms": [
-      "Office",
-      "Living Room"
-    ],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   },
   {
     "id": 9000000040,
@@ -5080,18 +4371,6 @@
           "Default Title"
         ]
       }
-    ],
-    "normalizedCategory": "Bookcases",
-    "rooms": [
-      "Office",
-      "Living Room"
-    ],
-    "style": "Vintage",
-    "condition": null,
-    "era": null,
-    "materials": [],
-    "dimensions": null,
-    "isSold": false,
-    "isOnSale": false
+    ]
   }
 ]

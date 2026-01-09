@@ -17,11 +17,15 @@ interface ProductCardProps {
 export function ProductCard({ product, index = 0 }: ProductCardProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageError, setImageError] = useState(false);
   const [isWishlisted, setIsWishlisted] = useState(false);
   const { addItem } = useCartStore();
 
   const primaryImage = product.images[0];
   const secondaryImage = product.images[1];
+
+  // Fallback placeholder for broken images
+  const placeholderImage = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="533" viewBox="0 0 400 533"%3E%3Crect fill="%23f5f5f5" width="400" height="533"/%3E%3Ctext fill="%23999" font-family="system-ui" font-size="14" text-anchor="middle" x="200" y="266"%3EImage unavailable%3C/text%3E%3C/svg%3E';
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -50,23 +54,27 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
             <div className="absolute inset-0 bg-secondary animate-pulse" />
           )}
 
-          <Link href={`/products/${product.handle}`}>
+          <Link href={`/products/${product.handle}`} className="absolute inset-0">
             {/* Primary Image */}
             {primaryImage && (
               <Image
-                src={primaryImage.original}
+                src={imageError ? placeholderImage : primaryImage.original}
                 alt={product.title}
                 fill
                 className={`object-cover gallery-image transition-opacity duration-700 ${
                   imageLoaded ? 'opacity-100' : 'opacity-0'
-                } ${isHovered && secondaryImage ? 'opacity-0' : 'opacity-100'}`}
+                } ${isHovered && secondaryImage && !imageError ? 'opacity-0' : 'opacity-100'}`}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 onLoad={() => setImageLoaded(true)}
+                onError={() => {
+                  setImageError(true);
+                  setImageLoaded(true);
+                }}
               />
             )}
 
-            {/* Secondary Image (on hover) */}
-            {secondaryImage && (
+            {/* Secondary Image (on hover) - only show if primary loaded successfully */}
+            {secondaryImage && !imageError && (
               <Image
                 src={secondaryImage.original}
                 alt={`${product.title} - alternate view`}

@@ -8,6 +8,8 @@ export interface NavCategory {
   label: string;
   href: string;
   items: NavItem[];
+  image?: string;
+  description?: string;
 }
 
 export interface NavSection {
@@ -16,6 +18,31 @@ export interface NavSection {
   hasDropdown?: boolean;
   featured?: boolean;
   categories?: NavCategory[];
+}
+
+// Category images mapping - using actual product images from scraped data
+export const categoryImages: Record<string, string> = {
+  // Furniture - Room based
+  'Shop All': 'https://cdn.shopify.com/s/files/1/0071/3549/4213/files/IMG_8850.jpg?v=1731690951',
+  'Living Room': 'https://cdn.shopify.com/s/files/1/0071/3549/4213/files/IMG_5098_4b70569b-2acd-4b64-bf45-2d48270bd5d8.jpg?v=1743784800',
+  'Bedroom': 'https://cdn.shopify.com/s/files/1/0071/3549/4213/files/IMG_6868.jpg?v=1737648800',
+  'Dining Room': 'https://cdn.shopify.com/s/files/1/0071/3549/4213/files/SB07.23.25_111.jpg?v=1753319579',
+  'Office': 'https://cdn.shopify.com/s/files/1/0071/3549/4213/files/Final-106_2f07173d-27d7-44d2-b2ff-fdfc8fda6498.jpg?v=1710912682',
+  'Storage': 'https://cdn.shopify.com/s/files/1/0071/3549/4213/files/Finish-120_cffb1ed9-678b-4444-bbf8-7605beabc777.jpg?v=1691552612',
+  // Lighting
+  'All Lighting': 'https://cdn.shopify.com/s/files/1/0071/3549/4213/files/Capture_224_5cf9cb31-3843-47b7-b13e-21e6758ee17c.jpg?v=1767892046',
+  // Art & Decor
+  'Wall Art': 'https://cdn.shopify.com/s/files/1/0071/3549/4213/files/Capture_240_7324ef7c-a05a-4fd0-8155-18d48c701f62.jpg?v=1767891935',
+  'Decorative Objects': 'https://cdn.shopify.com/s/files/1/0071/3549/4213/files/Capture_207_28605d0b-52a9-4482-806d-76eba79b9ace.jpg?v=1767911012',
+  'Textiles': 'https://cdn.shopify.com/s/files/1/0071/3549/4213/files/Capture_198_76094f1f-b2ba-4572-9105-6be9ed4aa7d1.jpg?v=1767891489',
+  // Kitchen & Dining
+  'Tabletop': 'https://cdn.shopify.com/s/files/1/0071/3549/4213/files/Capture_186_ca438f7f-bc18-451f-9abc-396c2381986b.jpg?v=1767891322',
+  'Bar & Entertaining': 'https://cdn.shopify.com/s/files/1/0071/3549/4213/files/Capture_155_57f534a4-022d-402d-a230-68da86eeeaab.jpg?v=1767891151',
+};
+
+// Get image for a category, with fallback
+export function getCategoryImage(label: string): string {
+  return categoryImages[label] || 'https://cdn.shopify.com/s/files/1/0071/3549/4213/files/IMG_8850.jpg?v=1731690951';
 }
 
 export const navigation: NavSection[] = [
@@ -37,65 +64,62 @@ export const navigation: NavSection[] = [
         label: 'Shop All',
         href: '/products?category=furniture',
         items: [
-          { label: 'Shop All Vintage', href: '/products?category=furniture&style=vintage' },
-          { label: 'Shop All Modern', href: '/products?category=furniture&style=modern' },
+          { label: 'Shop All Vintage', href: '/products?styles=Vintage' },
+          { label: 'Shop All Modern', href: '/products?styles=Modern' },
           { label: 'Sunbeam Exclusive', href: '/products?category=furniture&collection=exclusive', featured: true },
         ],
       },
       {
         label: 'Living Room',
-        href: '/products?category=living-room',
+        href: '/products?rooms=Living%20Room',
         items: [
-          { label: 'All Sofas & Seating', href: '/products?category=sofas-seating' },
-          { label: 'Mid Century Sofas', href: '/products?category=sofas&style=mid-century' },
-          { label: 'Sectionals & Modular', href: '/products?category=sectionals' },
-          { label: 'Loveseats & Settees', href: '/products?category=loveseats' },
-          { label: 'Accent & Lounge Chairs', href: '/products?category=accent-chairs' },
-          { label: 'Chaise Lounges', href: '/products?category=chaise-lounges' },
-          { label: 'Coffee Tables', href: '/products?category=coffee-tables' },
-          { label: 'End Tables', href: '/products?category=end-tables' },
-          { label: 'Benches & Ottomans', href: '/products?category=benches-ottomans' },
+          { label: 'All Living Room', href: '/products?rooms=Living%20Room' },
+          { label: 'Sofas', href: '/products?categories=Sofas' },
+          { label: 'Sectionals & Modular', href: '/products?categories=Sectionals%20%26%20Modular' },
+          { label: 'Loveseats', href: '/products?categories=Loveseats' },
+          { label: 'Accent Chairs', href: '/products?categories=Accent%20Chairs' },
+          { label: 'Coffee Tables', href: '/products?categories=Coffee%20Tables' },
+          { label: 'Side Tables', href: '/products?categories=Side%20Tables' },
+          { label: 'Media Consoles', href: '/products?categories=Media%20Consoles' },
         ],
       },
       {
         label: 'Bedroom',
-        href: '/products?category=bedroom',
+        href: '/products?rooms=Bedroom',
         items: [
-          { label: 'Beds & Headboards', href: '/products?category=beds' },
-          { label: 'Nightstands', href: '/products?category=nightstands' },
-          { label: 'Dressers & Armoires', href: '/products?category=dressers' },
-          { label: 'Vanities', href: '/products?category=vanities' },
+          { label: 'All Bedroom', href: '/products?rooms=Bedroom' },
+          { label: 'Nightstands', href: '/products?categories=Nightstands' },
+          { label: 'Dressers', href: '/products?categories=Dressers' },
         ],
       },
       {
         label: 'Dining Room',
-        href: '/products?category=dining',
+        href: '/products?rooms=Dining%20Room',
         items: [
-          { label: 'Dining Tables', href: '/products?category=dining-tables' },
-          { label: 'Dining Chairs', href: '/products?category=dining-chairs' },
-          { label: 'Bar & Counter Stools', href: '/products?category=bar-stools' },
-          { label: 'Buffets & Sideboards', href: '/products?category=buffets' },
-          { label: 'Bar Carts', href: '/products?category=bar-carts' },
+          { label: 'All Dining Room', href: '/products?rooms=Dining%20Room' },
+          { label: 'Dining Tables', href: '/products?categories=Dining%20Tables' },
+          { label: 'Dining Chairs', href: '/products?categories=Dining%20Chairs' },
+          { label: 'Dining Sets', href: '/products?categories=Dining%20Sets' },
+          { label: 'Bar Stools', href: '/products?categories=Bar%20Stools' },
         ],
       },
       {
         label: 'Office',
-        href: '/products?category=office',
+        href: '/products?rooms=Office',
         items: [
-          { label: 'Office Chairs', href: '/products?category=office-chairs' },
-          { label: 'Desks', href: '/products?category=desks' },
-          { label: 'Bookcases', href: '/products?category=bookcases' },
-          { label: 'Filing Cabinets', href: '/products?category=filing-cabinets' },
+          { label: 'All Office', href: '/products?rooms=Office' },
+          { label: 'Office Chairs', href: '/products?categories=Office%20Chairs' },
+          { label: 'Desks', href: '/products?categories=Desks' },
+          { label: 'Bookcases', href: '/products?categories=Bookcases' },
         ],
       },
       {
         label: 'Storage',
         href: '/products?category=storage',
         items: [
-          { label: 'Credenzas', href: '/products?category=credenzas' },
-          { label: 'Shelving Units', href: '/products?category=shelving' },
-          { label: 'Media Consoles', href: '/products?category=media-consoles' },
-          { label: 'Room Dividers', href: '/products?category=room-dividers' },
+          { label: 'Bookcases', href: '/products?categories=Bookcases' },
+          { label: 'Media Consoles', href: '/products?categories=Media%20Consoles' },
+          { label: 'Dressers', href: '/products?categories=Dressers' },
         ],
       },
     ],
@@ -109,12 +133,9 @@ export const navigation: NavSection[] = [
         label: 'All Lighting',
         href: '/products?category=lighting',
         items: [
-          { label: 'Floor Lamps', href: '/products?category=floor-lamps' },
-          { label: 'Table Lamps', href: '/products?category=table-lamps' },
-          { label: 'Pendant Lights', href: '/products?category=pendant-lights' },
-          { label: 'Chandeliers', href: '/products?category=chandeliers' },
-          { label: 'Wall Sconces', href: '/products?category=wall-sconces' },
-          { label: 'Desk Lamps', href: '/products?category=desk-lamps' },
+          { label: 'Floor Lamps', href: '/products?categories=Floor%20Lamps' },
+          { label: 'Table Lamps', href: '/products?categories=Table%20Lamps' },
+          { label: 'Pendants & Chandeliers', href: '/products?categories=Pendants%20%26%20Chandeliers' },
         ],
       },
     ],
@@ -126,38 +147,59 @@ export const navigation: NavSection[] = [
     categories: [
       {
         label: 'Wall Art',
-        href: '/products?category=wall-art',
+        href: '/products?categories=Wall%20Art',
         items: [
-          { label: 'Paintings', href: '/products?category=paintings' },
-          { label: 'Prints & Posters', href: '/products?category=prints' },
-          { label: 'Wall Sculptures', href: '/products?category=wall-sculptures' },
-          { label: 'Mirrors', href: '/products?category=mirrors' },
+          { label: 'All Wall Art', href: '/products?categories=Wall%20Art' },
+          { label: 'Paintings', href: '/products?categories=Wall%20Art&type=painting' },
+          { label: 'Prints & Posters', href: '/products?categories=Wall%20Art&type=print' },
         ],
       },
       {
         label: 'Decorative Objects',
-        href: '/products?category=decorative',
+        href: '/products?categories=Decorative%20Objects',
         items: [
-          { label: 'Vases', href: '/products?category=vases' },
-          { label: 'Sculptures', href: '/products?category=sculptures' },
-          { label: 'Ceramics', href: '/products?category=ceramics' },
-          { label: 'Bookends', href: '/products?category=bookends' },
+          { label: 'All Decorative Objects', href: '/products?categories=Decorative%20Objects' },
+          { label: 'Vases', href: '/products?categories=Decorative%20Objects&type=vase' },
+          { label: 'Sculptures', href: '/products?categories=Decorative%20Objects&type=sculpture' },
         ],
       },
       {
         label: 'Textiles',
         href: '/products?category=textiles',
         items: [
-          { label: 'Rugs', href: '/products?category=rugs' },
-          { label: 'Throw Pillows', href: '/products?category=pillows' },
-          { label: 'Blankets', href: '/products?category=blankets' },
+          { label: 'Rugs', href: '/products?categories=Rugs' },
+        ],
+      },
+    ],
+  },
+  {
+    label: 'Kitchen & Dining',
+    href: '/products?category=kitchen-dining',
+    hasDropdown: true,
+    categories: [
+      {
+        label: 'Tabletop',
+        href: '/products?category=kitchen-dining',
+        items: [
+          { label: 'Serveware', href: '/products?categories=Serveware' },
+          { label: 'Dinnerware', href: '/products?categories=Dinnerware' },
+          { label: 'Glassware', href: '/products?categories=Glassware' },
+        ],
+      },
+      {
+        label: 'Bar & Entertaining',
+        href: '/products?category=bar',
+        items: [
+          { label: 'Bar Accessories', href: '/products?categories=Bar%20Accessories' },
+          { label: 'Bar Carts', href: '/products?categories=Bar%20Carts' },
+          { label: 'Decanters', href: '/products?categories=Decanters' },
         ],
       },
     ],
   },
   {
     label: 'Outdoor',
-    href: '/products?category=outdoor',
+    href: '/products?rooms=Outdoor',
   },
   {
     label: 'Gifts',
@@ -169,4 +211,20 @@ export const secondaryNavigation = [
   { label: 'Interior Designers', href: '/trade-program' },
   { label: 'About Us', href: '/about' },
   { label: 'Visit Us', href: '/visit' },
+];
+
+// Style-based navigation shortcuts
+export const styleNavigation = [
+  { label: 'Vintage', href: '/products?styles=Vintage' },
+  { label: 'Modern', href: '/products?styles=Modern' },
+  { label: 'Mid Century', href: '/products?styles=Mid%20Century' },
+  { label: 'Contemporary', href: '/products?styles=Contemporary' },
+];
+
+// Room-based navigation shortcuts
+export const roomNavigation = [
+  { label: 'Living Room', href: '/products?rooms=Living%20Room' },
+  { label: 'Bedroom', href: '/products?rooms=Bedroom' },
+  { label: 'Dining Room', href: '/products?rooms=Dining%20Room' },
+  { label: 'Office', href: '/products?rooms=Office' },
 ];

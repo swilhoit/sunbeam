@@ -16,7 +16,13 @@
       "Bash(node:*)",
       "Bash(gh repo create:*)",
       "Bash(git push:*)",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(curl:*)",
+      "Bash(tree:*)",
+      "Bash(npx tsx:*)",
+      "Bash(jq:*)",
+      "Bash(grep:*)",
+      "Bash(npx tsc:*)"
     ]
   }
 }
