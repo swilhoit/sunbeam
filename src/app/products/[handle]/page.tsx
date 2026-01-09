@@ -4,7 +4,7 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { ProductGallery } from '@/components/products/ProductGallery';
 import { ProductCard } from '@/components/products/ProductCard';
-import { Button } from '@/components/ui/button';
+import { ProductActions } from '@/components/products/ProductActions';
 import { Separator } from '@/components/ui/separator';
 import { getAllProducts, getProductByHandle, getRelatedProducts, formatPrice } from '@/lib/products';
 import { ChevronLeft, Truck, Shield, RotateCcw } from 'lucide-react';
@@ -110,13 +110,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
               )}
 
               {/* Add to Cart */}
-              <div className="flex gap-4 mb-8">
-                <Button
-                  size="lg"
-                  className="flex-1 h-14 text-sm uppercase tracking-[0.15em] bg-foreground text-background hover:bg-foreground/90"
-                >
-                  Add to Cart
-                </Button>
+              <div className="mb-8">
+                <ProductActions product={product} />
               </div>
 
               {/* Features */}

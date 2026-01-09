@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Providers } from "@/components/providers/Providers";
 
 export const metadata: Metadata = {
   title: "Sunbeam | Curated Vintage & Mid-Century Furniture",
@@ -20,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );
