@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { usePathname } from 'next/navigation';
 import { Search, ShoppingBag, Menu, X, ChevronDown, ChevronRight, Heart, User } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -110,10 +110,43 @@ export function Header() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileExpandedSection, setMobileExpandedSection] = useState<string | null>(null);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   const pathname = usePathname();
   const { openCart, getItemCount } = useCartStore();
   const itemCount = getItemCount();
+
+  // Ref for dropdown close timeout
+  const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Delayed dropdown handlers to prevent flicker when moving between nav item and dropdown
+  const handleDropdownEnter = useCallback((label: string) => {
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current);
+      dropdownTimeoutRef.current = null;
+    }
+    setActiveDropdown(label);
+  }, []);
+
+  const handleDropdownLeave = useCallback(() => {
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 150); // Small delay allows mouse to reach dropdown
+  }, []);
+
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (dropdownTimeoutRef.current) {
+        clearTimeout(dropdownTimeoutRef.current);
+      }
+    };
+  }, []);
+
+  // Prevent hydration mismatch from cart localStorage
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Determine if we're on a shop/products page (should always have dark text)
   const isShopMode = pathname?.startsWith('/products');
@@ -299,8 +332,8 @@ export function Header() {
               <div
                 key={section.label}
                 className="relative"
-                onMouseEnter={() => section.hasDropdown && setActiveDropdown(section.label)}
-                onMouseLeave={() => setActiveDropdown(null)}
+                onMouseEnter={() => section.hasDropdown && handleDropdownEnter(section.label)}
+                onMouseLeave={handleDropdownLeave}
               >
                 <Link
                   href={section.href}
@@ -357,7 +390,7 @@ export function Header() {
             >
               <ShoppingBag className="h-5 w-5" strokeWidth={1.5} />
               <span className="sr-only">Cart</span>
-              {itemCount > 0 && (
+              {mounted && itemCount > 0 && (
                 <span className={cn(
                   'absolute -top-1 -right-1 h-5 w-5 rounded-full text-[11px] flex items-center justify-center font-medium',
                   hasSolidBg ? 'bg-foreground text-background' : 'bg-white text-black'
@@ -386,8 +419,8 @@ export function Header() {
                 ? 'opacity-100 visible max-h-[600px]'
                 : 'opacity-0 invisible max-h-0 pointer-events-none'
             )}
-            onMouseEnter={() => setActiveDropdown(section.label)}
-            onMouseLeave={() => setActiveDropdown(null)}
+            onMouseEnter={() => handleDropdownEnter(section.label)}
+            onMouseLeave={handleDropdownLeave}
           >
             <div className="mx-auto max-w-[1800px] px-6 md:px-12 lg:px-20 py-8">
               {/* Category Image Cards */}

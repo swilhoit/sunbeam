@@ -177,9 +177,8 @@ async function fetchAllProducts(): Promise<ShopifyProduct[]> {
 }
 
 async function scrapeProducts(maxProducts?: number): Promise<void> {
-  // Create directories
+  // Create output directory
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
-  fs.mkdirSync(IMAGES_DIR, { recursive: true });
 
   // Fetch all products
   let products = await fetchAllProducts();
@@ -196,11 +195,7 @@ async function scrapeProducts(maxProducts?: number): Promise<void> {
     const product = products[i];
     console.log(`[${i + 1}/${products.length}] Processing: ${product.title}`);
 
-    // Create product image directory
-    const productImagesDir = path.join(IMAGES_DIR, product.handle);
-    fs.mkdirSync(productImagesDir, { recursive: true });
-
-    // Download images
+    // Collect image URLs (skip downloading - use Shopify CDN directly)
     const images: ScrapedProduct['images'] = [];
 
     for (let j = 0; j < product.images.length; j++) {
@@ -208,24 +203,14 @@ async function scrapeProducts(maxProducts?: number): Promise<void> {
       const hiResUrl = getHighResImageUrl(image.src);
       const ext = path.extname(new URL(hiResUrl).pathname) || '.jpg';
       const filename = `${j + 1}${ext}`;
-      const localPath = path.join(productImagesDir, filename);
       const relativePath = path.join('images', product.handle, filename);
 
-      try {
-        if (!fs.existsSync(localPath)) {
-          await downloadImage(hiResUrl, localPath);
-          await sleep(200); // Rate limiting for images
-        }
-
-        images.push({
-          original: hiResUrl,
-          local: relativePath,
-          width: image.width,
-          height: image.height,
-        });
-      } catch (error) {
-        console.error(`  Failed to download image: ${hiResUrl}`);
-      }
+      images.push({
+        original: hiResUrl,
+        local: relativePath, // Not downloaded, but kept for compatibility
+        width: image.width,
+        height: image.height,
+      });
     }
 
     // Process variants
@@ -271,9 +256,8 @@ async function scrapeProducts(maxProducts?: number): Promise<void> {
 
   console.log(`\nScraping complete!`);
   console.log(`Products saved to: ${PRODUCTS_FILE}`);
-  console.log(`Images saved to: ${IMAGES_DIR}`);
   console.log(`Total products: ${scrapedProducts.length}`);
-  console.log(`Total images: ${scrapedProducts.reduce((acc, p) => acc + p.images.length, 0)}`);
+  console.log(`Total images (using CDN URLs): ${scrapedProducts.reduce((acc, p) => acc + p.images.length, 0)}`);
 }
 
 // Parse command line arguments

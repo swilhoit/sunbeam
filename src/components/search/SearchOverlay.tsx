@@ -142,7 +142,7 @@ export function SearchOverlay({ isOpen, onClose }: SearchOverlayProps) {
                     <div className="relative w-14 h-14 rounded-lg overflow-hidden bg-secondary flex-shrink-0">
                       {product.images[0] && (
                         <Image
-                          src={product.images[0].local.startsWith('/') ? product.images[0].local : `/${product.images[0].local}`}
+                          src={product.images[0].original}
                           alt={product.title}
                           fill
                           className="object-cover"
