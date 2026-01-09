@@ -15,7 +15,7 @@ export default function ProductsPage() {
     <>
       <Header />
 
-      <main className="pt-24 pb-20">
+      <main className="pt-32 pb-20">
         <div className="mx-auto max-w-[1800px] px-6 md:px-12 lg:px-20">
           {/* Page Header */}
           <div className="mb-8 flex items-baseline justify-between">
