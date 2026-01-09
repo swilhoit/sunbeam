@@ -207,8 +207,18 @@ export function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left" className="w-full sm:w-[400px] bg-background p-0">
-                <ScrollArea className="h-full">
-                  <div className="flex flex-col pt-16 pb-8">
+                {/* Mobile Menu Header with Logo */}
+                <div className="flex items-center justify-between px-6 py-4 border-b border-border">
+                  <Link
+                    href="/"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-xl font-heading"
+                  >
+                    Sunbeam Vintage
+                  </Link>
+                </div>
+                <ScrollArea className="h-[calc(100%-60px)]">
+                  <div className="flex flex-col pb-8">
                     {/* Mobile Navigation */}
                     <nav className="flex flex-col">
                       {navigation.map((section) => (

@@ -48,7 +48,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
     <>
       <Header />
 
-      <main className="pt-28 pb-20">
+      <main className="pt-28 pb-20 overflow-x-hidden">
         <div className="mx-auto max-w-[1800px] px-6 md:px-12 lg:px-20">
           {/* Breadcrumb */}
           <nav className="mb-8">

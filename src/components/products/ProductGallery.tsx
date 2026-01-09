@@ -110,7 +110,7 @@ export function ProductGallery({ images, title }: ProductGalleryProps) {
         </div>
 
         {/* Thumbnails - Mobile Bottom */}
-        <div className="flex lg:hidden gap-2 mt-4 overflow-x-auto pb-2">
+        <div className="flex lg:hidden gap-2 mt-4 overflow-x-auto pb-2 -mx-6 px-6">
           {images.map((image, index) => (
             <button
               key={index}
