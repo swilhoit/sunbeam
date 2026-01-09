@@ -3,65 +3,22 @@ import Link from 'next/link';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { ProductCard } from '@/components/products/ProductCard';
+import { HeroSlider } from '@/components/home/HeroSlider';
 import { getAllProducts } from '@/lib/products';
 import { ArrowRight } from 'lucide-react';
 
 export default function HomePage() {
   const products = getAllProducts();
   const featuredProducts = products.slice(0, 6);
-  const heroProduct = products[0];
+  const heroProducts = products.slice(0, 5);
 
   return (
     <>
       <Header />
 
       <main>
-        {/* Hero Section */}
-        <section className="relative min-h-screen flex items-end pb-20 pt-32">
-          {/* Background Image */}
-          <div className="absolute inset-0 z-0">
-            {heroProduct?.images[0] && (
-              <Image
-                src={heroProduct.images[0].original}
-                alt="Sunbeam Vintage"
-                fill
-                className="object-cover"
-                priority
-                sizes="100vw"
-              />
-            )}
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
-          </div>
-
-          {/* Hero Content */}
-          <div className="relative z-10 mx-auto max-w-[1800px] px-6 md:px-12 lg:px-20 w-full">
-            <div className="max-w-2xl fade-up">
-              <p className="text-[11px] font-sans uppercase tracking-[0.3em] text-foreground/70 mb-4">
-                Curated Vintage & Mid-Century
-              </p>
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif mb-6 leading-[0.95]">
-                Timeless<br />
-                Design
-              </h1>
-              <p className="text-lg text-foreground/80 mb-8 max-w-md leading-relaxed">
-                Each piece tells a story. Discover furniture that transforms
-                spaces into sanctuaries of style and character.
-              </p>
-              <Link
-                href="/products"
-                className="inline-flex items-center gap-3 text-sm font-sans uppercase tracking-[0.2em] group"
-              >
-                <span>Explore Collection</span>
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-            <div className="w-px h-16 bg-gradient-to-b from-transparent via-foreground/30 to-foreground/60 animate-pulse" />
-          </div>
-        </section>
+        {/* Hero Slider */}
+        <HeroSlider products={heroProducts} />
 
         {/* Featured Collection */}
         <section className="py-24 md:py-32">

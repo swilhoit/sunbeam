@@ -35,7 +35,7 @@ export function Header() {
       }`}
     >
       <div className="mx-auto max-w-[1800px] px-6 md:px-12 lg:px-20">
-        <div className="flex items-center justify-between h-20 md:h-24">
+        <div className="relative flex items-center h-20 md:h-24">
           {/* Mobile Menu */}
           <div className="lg:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -70,7 +70,7 @@ export function Header() {
           </div>
 
           {/* Desktop Navigation - Left */}
-          <nav className="hidden lg:flex items-center space-x-10">
+          <nav className="hidden lg:flex items-center space-x-10 flex-1">
             {navLinks.slice(0, 3).map((link) => (
               <Link
                 key={link.href}
@@ -83,14 +83,14 @@ export function Header() {
           </nav>
 
           {/* Logo - Center */}
-          <Link href="/" className="absolute left-1/2 -translate-x-1/2">
+          <Link href="/" className="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 lg:mx-auto">
             <h1 className="text-2xl md:text-3xl font-serif tracking-tight">
               Sunbeam
             </h1>
           </Link>
 
-          {/* Desktop Navigation - Right */}
-          <nav className="hidden lg:flex items-center space-x-10">
+          {/* Desktop Navigation - Right + Actions */}
+          <div className="hidden lg:flex items-center space-x-10 flex-1 justify-end">
             {navLinks.slice(3).map((link) => (
               <Link
                 key={link.href}
@@ -100,10 +100,23 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-          </nav>
+            <div className="flex items-center space-x-4 ml-6">
+              <Button variant="ghost" size="icon" className="hover:bg-transparent">
+                <Search className="h-5 w-5" strokeWidth={1.5} />
+                <span className="sr-only">Search</span>
+              </Button>
+              <Button variant="ghost" size="icon" className="hover:bg-transparent relative">
+                <ShoppingBag className="h-5 w-5" strokeWidth={1.5} />
+                <span className="sr-only">Cart</span>
+                <span className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-foreground text-background text-[10px] flex items-center justify-center">
+                  0
+                </span>
+              </Button>
+            </div>
+          </div>
 
-          {/* Actions */}
-          <div className="flex items-center space-x-4">
+          {/* Mobile Actions */}
+          <div className="flex lg:hidden items-center space-x-4 ml-auto">
             <Button variant="ghost" size="icon" className="hover:bg-transparent">
               <Search className="h-5 w-5" strokeWidth={1.5} />
               <span className="sr-only">Search</span>

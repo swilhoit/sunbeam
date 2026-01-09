@@ -6,7 +6,11 @@
       "Bash(npm run scrape:sample:*)",
       "Skill(frontend-design)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(vercel --yes:*)",
+      "Bash(npm ls:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)"
     ]
   }
 }
