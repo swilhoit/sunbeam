@@ -31,7 +31,7 @@ export function Footer() {
       <div className="border-b border-border">
         <div className="mx-auto max-w-[1800px] px-6 md:px-12 lg:px-20 py-16 md:py-24">
           <div className="max-w-2xl">
-            <h3 className="text-3xl md:text-4xl font-serif mb-4">
+            <h3 className="text-3xl md:text-4xl font-heading mb-4">
               Join the Collection
             </h3>
             <p className="text-muted-foreground mb-8 max-w-lg">
@@ -59,7 +59,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-4 lg:col-span-2 mb-8 lg:mb-0">
             <Link href="/" className="inline-block mb-6">
-              <span className="text-3xl font-serif">Sunbeam</span>
+              <span className="text-3xl font-heading">Sunbeam</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs mb-6 leading-relaxed">
               Curated vintage and mid-century modern furniture for those who

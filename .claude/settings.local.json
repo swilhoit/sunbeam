@@ -10,7 +10,13 @@
       "Bash(vercel --yes:*)",
       "Bash(npm ls:*)",
       "Bash(npm install:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "WebFetch(domain:sunbeamvintage.com)",
+      "Bash(ls:*)",
+      "Bash(node:*)",
+      "Bash(gh repo create:*)",
+      "Bash(git push:*)",
+      "Bash(git config:*)"
     ]
   }
 }

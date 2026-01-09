@@ -74,7 +74,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </p>
 
               {/* Title */}
-              <h1 className="text-3xl md:text-4xl font-serif mb-4">
+              <h1 className="text-3xl md:text-4xl font-heading mb-4">
                 {product.title}
               </h1>
 
@@ -134,7 +134,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
               {/* Description */}
               <div className="prose prose-neutral max-w-none">
-                <h3 className="text-lg font-serif mb-4">About This Piece</h3>
+                <h3 className="text-lg font-heading mb-4">About This Piece</h3>
                 <div className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
                   {product.description}
                 </div>
@@ -167,7 +167,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   <p className="text-[11px] font-sans uppercase tracking-[0.3em] text-muted-foreground mb-2">
                     You May Also Like
                   </p>
-                  <h2 className="text-3xl md:text-4xl font-serif">
+                  <h2 className="text-3xl md:text-4xl font-heading">
                     Related Pieces
                   </h2>
                 </div>

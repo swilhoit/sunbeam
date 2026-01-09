@@ -22,7 +22,7 @@ export default function ProductsPage() {
             <p className="text-[11px] font-sans uppercase tracking-[0.3em] text-muted-foreground mb-3">
               The Collection
             </p>
-            <h1 className="text-5xl md:text-6xl font-serif mb-6">
+            <h1 className="text-5xl md:text-6xl font-heading mb-6">
               All Pieces
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">

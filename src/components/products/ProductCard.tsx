@@ -132,7 +132,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
           </p>
 
           {/* Title */}
-          <h3 className="text-base font-serif text-foreground leading-snug line-clamp-2 group-hover:text-foreground/80 transition-colors">
+          <h3 className="text-base font-heading text-foreground leading-snug line-clamp-2 group-hover:text-foreground/80 transition-colors">
             {product.title}
           </h3>
 

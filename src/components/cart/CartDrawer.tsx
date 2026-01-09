@@ -50,7 +50,7 @@ export function CartDrawer() {
           <div className="flex items-center justify-between px-6 py-5 border-b border-border">
             <div className="flex items-center gap-3">
               <ShoppingBag className="h-5 w-5" />
-              <h2 className="text-lg font-serif">Your Cart</h2>
+              <h2 className="text-lg font-heading">Your Cart</h2>
               <span className="text-sm text-muted-foreground">
                 ({items.length} {items.length === 1 ? 'item' : 'items'})
               </span>
@@ -93,7 +93,7 @@ export function CartDrawer() {
             {items.length === 0 ? (
               <div className="flex flex-col items-center justify-center h-full py-20 px-6">
                 <ShoppingBag className="h-16 w-16 text-muted-foreground/30 mb-6" />
-                <p className="text-lg font-serif mb-2">Your cart is empty</p>
+                <p className="text-lg font-heading mb-2">Your cart is empty</p>
                 <p className="text-sm text-muted-foreground text-center mb-8">
                   Discover our curated collection of vintage furniture and decor.
                 </p>
@@ -133,7 +133,7 @@ export function CartDrawer() {
                       <Link
                         href={`/products/${item.product.handle}`}
                         onClick={closeCart}
-                        className="font-serif text-sm hover:underline line-clamp-2"
+                        className="font-heading text-sm hover:underline line-clamp-2"
                       >
                         {item.product.title}
                       </Link>
@@ -183,7 +183,7 @@ export function CartDrawer() {
             <div className="border-t border-border p-6 space-y-4 bg-background">
               <div className="flex items-center justify-between">
                 <span className="text-sm text-muted-foreground">Subtotal</span>
-                <span className="text-lg font-serif">
+                <span className="text-lg font-heading">
                   ${subtotal.toLocaleString()}
                 </span>
               </div>

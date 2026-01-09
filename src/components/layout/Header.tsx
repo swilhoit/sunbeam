@@ -73,7 +73,7 @@ export function Header() {
                                 }
                                 className="flex items-center justify-between w-full px-6 py-4 text-left"
                               >
-                                <span className="text-base font-serif">{section.label}</span>
+                                <span className="text-base font-heading">{section.label}</span>
                                 <ChevronDown
                                   className={cn(
                                     'h-4 w-4 transition-transform',
@@ -113,7 +113,7 @@ export function Header() {
                             <Link
                               href={section.href}
                               onClick={() => setIsMobileMenuOpen(false)}
-                              className="block px-6 py-4 text-base font-serif"
+                              className="block px-6 py-4 text-base font-heading"
                             >
                               {section.label}
                             </Link>
@@ -152,7 +152,7 @@ export function Header() {
 
           {/* Logo */}
           <Link href="/" className="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0">
-            <h1 className="text-xl md:text-2xl font-serif tracking-tight whitespace-nowrap">
+            <h1 className="text-xl md:text-2xl font-heading tracking-tight whitespace-nowrap">
               Sunbeam Vintage
             </h1>
           </Link>

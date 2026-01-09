@@ -91,10 +91,10 @@ export function HeroSlider({ products }: HeroSliderProps) {
                       <p className="text-[11px] font-sans uppercase tracking-[0.3em] text-foreground/70 mb-4">
                         Featured Piece
                       </p>
-                      <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-4 leading-[1.1]">
+                      <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading mb-4 leading-[1.1]">
                         {product.title}
                       </h2>
-                      <p className="text-xl md:text-2xl font-serif text-foreground/80 mb-6">
+                      <p className="text-xl md:text-2xl font-heading text-foreground/80 mb-6">
                         ${product.price.toLocaleString()}
                       </p>
                       <Link
